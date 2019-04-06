@@ -1,0 +1,39 @@
+{
+	"name": "vscode-pwa",
+	"displayName": "Progressive Web Apps",
+	"description": "Progressive Web Apps Code Snippets",
+	"version": "0.0.1",
+	"publisher": "mayeedwin",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"author": {
+        "name": "Maye Edwin" 
+    },
+
+    "icon": ".vscode-pwa/icons/pwa.png",
+    "galleryBanner": {
+        "color": "#275370",
+        "theme": "dark"
+    },
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			}
+		]
+	},
+	"bugs": {
+        "url": "https://github.com/mayeedwin/vscode-pwa/issues/new/choose",
+        "email": "mayedwine1@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mayeedwin/vscode-pwa"
+    },
+    "homepage": "https://github.com/mayeedwin/vscode-pwa/blob/master/README.md"
+}
