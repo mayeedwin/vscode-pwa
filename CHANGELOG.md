@@ -2,6 +2,12 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
+## v0.0.6 > v0.0.7
+
+    - workbox window
+
+    - manifest
+
 ## v0.0.5
 
     - rename
@@ -23,10 +29,6 @@ All notable changes to the "vscode-pwa" extension will be documented here.
     - import workbox
 
     - workbox.strategies
-
-    - workbox window
-
-    - manifest
 
 ## v0.0.2
 
