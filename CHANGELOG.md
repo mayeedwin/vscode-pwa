@@ -1,4 +1,4 @@
-# PWA Change Log
+# Change Log
 
 ## v0.0.5
 
