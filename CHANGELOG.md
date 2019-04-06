@@ -2,7 +2,11 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
-## v0.0.7
+## v.0.0.9
+
+    - format code / styling
+
+## v0.0.8
 
     - basic service worker
 
