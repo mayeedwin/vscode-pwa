@@ -28,6 +28,10 @@
 			{
 				"language": "html",
 				"path": "./snippets/html.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/manifest.json"
 			}
 		]
 	},
