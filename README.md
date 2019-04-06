@@ -4,7 +4,7 @@ Let's build Progressive Web Apps in VS Code on the go!
 
 ### Features
 
-Progressive Web Apps Code Snippets for Workbox PWAs, on typing...
+Auto Create Progressive Web Apps Code Snippets in VS Code, on typing...
 
     - register service worker
     - add web manifest to pages
@@ -12,6 +12,7 @@ Progressive Web Apps Code Snippets for Workbox PWAs, on typing...
     - import workbox
     - workbox.strategies
     - workbox window
+    - manifest
 
 ### Requirements
 

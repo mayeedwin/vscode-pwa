@@ -8,7 +8,7 @@
 
 ## v0.0.3 > v0.0.4
 
-What we have..
+What we have...
 
     - register service worker
     - add web manifest to pages
@@ -16,6 +16,7 @@ What we have..
     - import workbox
     - workbox.strategies
     - workbox window
+    - manifest
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
