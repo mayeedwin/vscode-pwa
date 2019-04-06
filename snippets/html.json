@@ -22,7 +22,7 @@
 		"body": [
 			"$1",
 			"<!-- start of Web Manifest -->",
-			"  <link rel=\"manifest\" href=\"/app.webmanifest\">",
+			"   <link rel=\"manifest\" href=\"/app.webmanifest\">",
 			"<!-- end of Web Manifest -->",
 			"$1"
 		],
@@ -34,7 +34,7 @@
 		"body": [
 			"$1",
 			"<!-- theme-color -->",
-			"  <meta name=\"theme-color\" content=\"#fff\" />",
+			"   <meta name=\"theme-color\" content=\"#fff\" />",
 			"<!-- end-theme-color -->",
 			"$1"
 		],
