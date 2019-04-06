@@ -3,14 +3,17 @@
 		"prefix": "log vscode-pwa author",
 		"body": [
 			"$1",
-			"console.log('Authored by Maye Edwin');"
+			"console.log('Authored by Maye Edwin');",
+			"$1"
 		],
 		"description": "Authorship to console!"
 	},
 	"Workbox cache strategies": {
 		"prefix": "workbox.strategies",
 		"body": [
-			"/* add comments */",
+			"$1",
+			"/*change strategy method to fit your pwa needs,",
+			"  update RegExp dir/route and cache name*/",
 			"workbox.routing.registerRoute(",
 			"   new RegExp('talks/'),",
 			"   new workbox.strategies.StaleWhileRevalidate({",
@@ -24,7 +27,8 @@
 			"      }),",
 			"    ],",
 			"  })",
-			");"
+			");",
+			"$1"
 		],
 		"description": "Workbox cache strategies"
 	},
@@ -38,7 +42,7 @@
 			"$2",
 			"$2",
 			"$2",
-			"     /* add workbox",
+			"     /* add more workbox",
 			"          strategies */",
 			"$2",
 			"$2",
