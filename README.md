@@ -1,4 +1,4 @@
-## [vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
+## [<img src="https://github.com/webmaxru/progressive-web-apps-logo/blob/master/pwalogo.svg" height="25"/> [vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
 
 Let's build Progressive Web Apps in VS Code on the go!
 
