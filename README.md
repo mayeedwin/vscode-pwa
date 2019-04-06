@@ -44,6 +44,7 @@ All good to go with beta!
    
     - background sync
     - push notification add
+    - precache
 
 Initial release of vscode-pwa beta!
 
