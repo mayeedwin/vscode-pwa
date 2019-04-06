@@ -11,11 +11,17 @@
 What we have...
 
     - register service worker
+
     - add web manifest to pages
+
     - theme color
+
     - import workbox
+
     - workbox.strategies
+
     - workbox window
+    
     - manifest
 
 All notable changes to the "vscode-pwa" extension will be documented here.

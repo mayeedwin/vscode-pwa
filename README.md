@@ -7,11 +7,17 @@ Let's build Progressive Web Apps in VS Code on the go!
 Auto Create Progressive Web Apps Code Snippets in VS Code, on typing...
 
     - register service worker
+
     - add web manifest to pages
+
     - theme color
+
     - import workbox
+
     - workbox.strategies
+
     - workbox window
+
     - manifest
 
 ### Requirements
@@ -38,7 +44,6 @@ All good to go with beta!
    
     - background sync
     - push notification add
-    - app.webmanifest
 
 Initial release of vscode-pwa beta!
 
