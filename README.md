@@ -1,4 +1,4 @@
-## <img src="https://github.com/webmaxru/progressive-web-apps-logo/blob/master/pwalogo.svg" height="25"/> [vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
+## <img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/pwa.png" height="25"/> [vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
 
 Let's build Progressive Web Apps in VS Code on the go!
 
@@ -35,6 +35,10 @@ All good to go with beta!
     - next ; web manifest
     - html snippets
     - background sync
+
+### 0.0.2
+
+Logo add, typo fix, docs upgrade!
 
 ### 0.0.1
 
