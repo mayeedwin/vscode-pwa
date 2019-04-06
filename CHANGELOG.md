@@ -2,6 +2,18 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
+## v0.0.7
+
+    - basic service worker
+
+    - precache for npm
+
+    - workbox injectManifest
+
+    - workbox-cli devDependencies
+
+    - new logo add
+
 ## v0.0.6 > v0.0.7
 
     - workbox window

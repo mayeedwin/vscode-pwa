@@ -1,16 +1,24 @@
 ## <img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/pwa.png" height="25"/> [vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
 
-Let's build Progressive Web Apps in VS Code on the go!
+Let's build Progressive Web Apps in VS Code on the go! Workbox Support ✅
 
 ### Features
 
-Auto Create Progressive Web Apps Code Snippets in VS Code, on typing...
+Auto Create Progressive Web Apps Code Snippets in VS Code, on typing in your editor...
 
     - register service worker
 
     - add web manifest to pages
 
     - theme color
+
+    - basic service worker
+
+    - precache for npm
+
+    - workbox-cli devDependencies
+
+    - workbox injectManifest
 
     - import workbox
 

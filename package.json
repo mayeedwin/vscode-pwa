@@ -2,7 +2,7 @@
 	"name": "vscode-pwa",
 	"displayName": "PWA, Progressive Web Apps",
 	"description": "Progressive Web Apps Code Snippets. Let's build Progressive Web Apps in VS Code on the go!",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"publisher": "mayeedwin",
 	"engines": {
 		"vscode": "^1.28.0"
@@ -11,7 +11,7 @@
         "name": "Maye Edwin" 
     },
 
-    "icon": ".vscode-pwa/icons/pwa.png",
+    "icon": ".vscode-pwa/icons/vscode-pwa.png",
     "galleryBanner": {
         "color": "#fafafa",
         "theme": "light"
