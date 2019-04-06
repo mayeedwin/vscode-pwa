@@ -4,11 +4,14 @@ Let's build Progressive Web Apps in VS Code on the go!
 
 ### Features
 
-Progressive Web Apps Code Snippets for Workbox PWAs
+Progressive Web Apps Code Snippets for Workbox PWAs, on typing...
 
-  - import workbox
-  - workbox.strategies
-  
+    - register service worker
+    - add web manifest to pages
+    - theme color
+    - import workbox
+    - workbox.strategies
+    - workbox window
 
 ### Requirements
 
@@ -35,12 +38,6 @@ All good to go with beta!
     - next ; web manifest
     - html snippets
     - background sync
-
-### 0.0.2
-
-Logo add, typo fix, docs upgrade!
-
-### 0.0.1
 
 Initial release of vscode-pwa beta!
 

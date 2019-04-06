@@ -1,9 +1,20 @@
 # Change Log
 
-All notable changes to the "pwa-code-snippets" extension will be documented in this file.
+## 0.0.3 > 0.0.4
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+What we have..
 
-## [Unreleased]
+    - register service worker
+    - add web manifest to pages
+    - theme color
+    - import workbox
+    - workbox.strategies
+    - workbox window
 
-- Initial release
+All notable changes to the "vscode-pwa" extension will be documented here.
+
+## 0.0.2
+
+Logo add, typo fix, docs upgrade!
+
+## 0.0.1

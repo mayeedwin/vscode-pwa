@@ -1,0 +1,61 @@
+{
+	"Register Service Worker": {
+		"prefix": "register service worker",
+		"body": [
+			"$1",
+			"<!-- register service worker -->",
+			"  <script>",
+			"if ('serviceWorker' in navigator){",
+			"  window.addEventListener('load', function() {",
+			"  navigator.serviceWorker.register('/service-worker.js')",
+			"  .then(function() { console.log(['PWA Fire Bundle 🐹 ] Service Worker Registered']); });",
+			"   });",
+			" }",
+			"</script>",
+			"$1"
+		],
+		"description": "Register Service Worker"
+	},
+
+	"Add Web Manifest": {
+		"prefix": "add web manifest to pages",
+		"body": [
+			"$1",
+			"<!-- start of Web Manifest -->",
+			"  <link rel=\"manifest\" href=\"/app.webmanifest\">",
+			"<!-- end of Web Manifest -->",
+			"$1"
+		],
+		"description": "Add Web Manifest to pages"
+	},
+
+	"Add Theme Color": {
+		"prefix": "theme color",
+		"body": [
+			"$1",
+			"<!-- theme-color -->",
+			"  <meta name=\"theme-color\" content=\"#fff\" />",
+			"<!-- end-theme-color -->",
+			"$1"
+		],
+		"description": "Add theme color to pages"
+	},
+
+	"Workbox Window": {
+		"prefix": "workbox window",
+		"body": [
+			"$1",
+			"<script type=\"module\">",
+			"  import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';",
+			"$1",
+			"  workbox.routing.registerRoute(",
+			"   if ('serviceWorker' in navigator) {",
+			"     const wb = new Workbox('/service-worker.js');",
+			"     wb.register();",
+			"     }",
+			"</script>",
+			"$1"
+		],
+		"description": "Workbox Window"
+	}
+}
