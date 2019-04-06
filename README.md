@@ -1,4 +1,4 @@
-## vscode-pwa
+## [vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
 
 Let's build Progressive Web Apps in VS Code on the go!
 
@@ -8,10 +8,21 @@ Progressive Web Apps Code Snippets for Workbox PWAs
 
   - import workbox
   - workbox.strategies
+  
 
 ### Requirements
 
-Just install me!
+    "vscode": "^1.28.0"
+
+### Installation
+
+[Install vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa). It's available in Visual Studio Marketplace! OR
+
+Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press enter.
+
+```sh
+ext install mayeedwin.vscode-pwa
+```
 
 ### Known Issues
 
