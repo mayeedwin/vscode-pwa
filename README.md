@@ -41,4 +41,4 @@ All good to go with beta!
 
 Initial release of vscode-pwa beta!
 
-**Enjoy!**
+**Enjoy 😊 🐥**
