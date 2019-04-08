@@ -2,7 +2,6 @@
 	"manifest": {
 		"prefix": "manifest",
 		"body": [
-			"$1",
 			"{",
 			"\"background_color\": \"#fff\",",
 			"\"display\": \"standalone\",",
@@ -56,8 +55,7 @@
 			"],",
 			"\"start_url\": \"index.html\",",
 			"\"scope\": \"/\"",
-			"}",
-			"$1"
+			"}"
 		],
 		"description": "Create Web Manifest"
 	}
