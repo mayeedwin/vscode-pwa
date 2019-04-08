@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
+## v.0.1.2
+
+    - little typo fix, code cleanup
+
 ## v.0.1.1
 
     - workbox window bug fix
