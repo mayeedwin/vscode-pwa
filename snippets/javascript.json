@@ -119,7 +119,7 @@
 		"body": [
 			"$1",
 			"/* change strategy method to fit your pwa needs,",
-			"  update RegExp dir/route and cache name* /",
+			"  update RegExp dir/route and cache name */",
 			"workbox.routing.registerRoute(",
 			"   new RegExp('talks/'),",
 			"   new workbox.strategies.StaleWhileRevalidate({",
