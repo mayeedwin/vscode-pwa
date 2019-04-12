@@ -184,7 +184,6 @@
 		"body": [
 			"$1",
 			"// https://pwafire.org/developer/docs/background-sync/",
-			"$1",
 			" (function (window) {",
 			" 'use strict';",
 			" // Add background sync on page l",
