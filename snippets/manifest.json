@@ -58,5 +58,21 @@
 			"}"
 		],
 		"description": "Create Web Manifest"
+	},
+	
+	"Native App Install Banner": {
+		"prefix": "native app install",
+		"body": [
+			"$1",
+			" \"prefer_related_applications\": true,",
+			" \"related_applications\": [",
+			"   {",
+			"     \"platform\": \"play\",",
+			"     \"id\": \"your_native_app_id\"",
+			"    }",
+			" ]",
+			" $1"
+		],
+		"description": "Native App Install Banner"
 	}
 }
