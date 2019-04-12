@@ -63,9 +63,11 @@ All good to go with beta!
 
 > This beta version allows you to import Workbox and use cache strategies like a pro already! Next add; 
    
-    - background sync
-    - push notification add
-    - precache
+    - push notification
+
+    - custom install button
+
+    - custom share button
 
 Initial release of vscode-pwa beta!
 

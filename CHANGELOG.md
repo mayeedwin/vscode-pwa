@@ -4,6 +4,14 @@ All notable changes to the "vscode-pwa" extension will be documented here.
 
 ## v0.1.2
 
+    - add background sync
+
+    - doc updates
+
+    - add native app install banner
+
+## v0.1.2
+
     - little typo fix, code cleanup
 
 ## v0.1.1
