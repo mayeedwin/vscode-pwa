@@ -2,9 +2,11 @@
 
 Let's build Progressive Web Apps in VS Code on the go! [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅
 
+> basic service worker, app manifest, import workbox, precache, strategies, workbox window etc
+
 ### Features
 
-Auto Create Progressive Web Apps Code Snippets in VS Code like a pro, on typing in your editor the following...
+Write the **Service Worker** and **App Manifest** really quick and on the go by typing familiar progressive web apps key words in your vs code editor.
 
     - register service worker
 
@@ -26,7 +28,18 @@ Auto Create Progressive Web Apps Code Snippets in VS Code like a pro, on typing 
 
     - workbox window
 
+    - background sync
+
     - manifest
+
+    - native app install
+
+   - Background Sync - To your javascript source folder, create an empty **sync.js** file and type the following
+ keyword in it to add [backgroud sync](https://pwafire.org/developer/docs/background-sync/)
+
+ ```javascript
+     background sync
+ ```
 
 ### Requirements
 

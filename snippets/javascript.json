@@ -177,5 +177,53 @@
 			"CacheOnly"
 		],
 		"description": "Cache Only"
+	},
+
+	"Native App Install Banner": {
+		"prefix": "native app install",
+		"body": [
+			"$1",
+			" \"prefer_related_applications\": true,",
+			" \"related_applications\": [",
+			"   {",
+			"     \"platform\": \"play\",",
+			"     \"id\": \"your_native_app_id\"",
+			"    }",
+			" ]",
+			" $1"
+		],
+		"description": "Native App Install Banner"
+	},
+
+	"Background Sync": {
+		"prefix": "background sync",
+		"body": [
+			"$1",
+			"// https://pwafire.org/developer/docs/background-sync/",
+			" (function (window) {",
+			" 'use strict';",
+			" // Add background sync on page l",
+			" document.addEventListener(\"DOMContentLoaded\", function() {",
+			"  window.registerBGSync();",
+			" });",
+			" // exposing `registerSync()` globally for only development purpose",
+			"  window.registerBGSync = function() {",
+			" // if `Service Worker` is registered and read",
+			" navigator.serviceWorker.ready",
+			"   .then(function (registration) {",
+			"   // registering `background sync` event",
+			"   return registration.sync.register('posts') ",
+			"    // `posts` is sync tag name ; could be anything 😉",
+			"    .then(function (rs) {",
+			"      console.info('[ PWA Fire Bundle ] Background sync registered!');",
+			"    }, function () {",
+			"     console.error('Background sync registered failed.');",
+			"    });",
+			"   });",
+			"  };",
+			" })(window);",
+			"$1"
+		],
+		"description": "Add Background Sync"
 	}
 }
