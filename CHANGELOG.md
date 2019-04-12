@@ -2,7 +2,7 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
-## v0.1.2
+## v0.2.0
 
     - add background sync
 
