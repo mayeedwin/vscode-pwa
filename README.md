@@ -44,6 +44,10 @@ Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press en
    ext install mayeedwin.vscode-pwa
 ```
 
+### Demo with PWA VS Code in play
+
+Load [preview in your browser here](.vscode-pwa/vscode-pwa-vid.gif)
+
 ### Known Issues
 
 All good to go with beta!
@@ -60,4 +64,4 @@ All good to go with beta!
 
 Initial release of vscode-pwa beta!
 
-**Enjoy 😊 🐥**
+**Enjoy 😊 🐥** and thanks for checking it out. Let's connect on twitter [@mayeedwin1](https://twitter.com/mayeedwin) : )
