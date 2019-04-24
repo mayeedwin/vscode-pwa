@@ -1,42 +1,33 @@
-## <img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/pwa.png" height="25"/> [vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
+## <img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/pwa.png" height="25"/> [ PWA VS Code Snippets ](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
 
 Let's build Progressive Web Apps in VS Code on the go! [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅, read more [on this devdoc by pwafire.org](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/)
 
-### Features
+### Commands to type in your editor
 
-Write the **Service Worker** and **App Manifest** really quick and on the go by typing familiar progressive web apps key words in your vs code editor.
+Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
-    - register service worker
+| Command | Purpose and where to type |
+| --- | --- |
+| `register service worker` | register service worker in your landing page say `index.html` |
+| `add web manifest to pages` | link app.webmanifest to your pages in the `head tag` |
+| `theme color` | add theme color in your pages head tag |
+| `basic service worker` | create simple service worker for simple static sites |
+| `precache for npm` | workbox precache config code snippet in your say `sw-config.js` file |
+| `workbox-cli devDependencies` | adding workbox cli de dependancies in your `package.json file` |
+| `workbox injectManifest` | add precache versioned urls config in your workbox `service-worker.js` file |
+| `import workbox` | import workbox in your service worker |
+| `workbox.strategies` | add cache strategies in your service worker |
+| `workbox window` | add workbox window in your landing page for faster new service worker installs and refresh |
+| `manifest` | add manifest meta data i your empty `app.webmanifest` file |
+| `native app install` | add custom native app install banner prompt support in your app manifest |
 
-    - add web manifest to pages
+### Advanced Progressive Web Apps Features
 
-    - theme color
-
-    - basic service worker
-
-    - precache for npm
-
-    - workbox-cli devDependencies
-
-    - workbox injectManifest
-
-    - import workbox
-
-    - workbox.strategies
-
-    - workbox window
-
-    - background sync
-
-    - manifest
-
-    - native app install
-
-   - Background Sync - To your javascript source folder, create an empty **sync.js** file and type the following
+> Add Background Sync - To your javascript source folder, create an empty **sync.js** file and type the following
  keyword in it to add [backgroud sync](https://pwafire.org/developer/docs/background-sync/)
 
  ```javascript
-     background sync
+    background sync
  ```
 
 ### Requirements
@@ -50,7 +41,7 @@ Write the **Service Worker** and **App Manifest** really quick and on the go by 
 Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press enter.
 
 ```sh
-ext install mayeedwin.vscode-pwa
+   ext install mayeedwin.vscode-pwa
 ```
 
 ### Known Issues
