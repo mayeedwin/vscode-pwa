@@ -18,7 +18,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 | `import workbox` | import workbox in your service worker |
 | `workbox.strategies` | add cache strategies in your service worker |
 | `workbox window` | add workbox window in your landing page for faster new service worker installs and refresh |
-| `manifest` | add manifest meta data i your empty `app.webmanifest` file |
+| `manifest` | add manifest meta data in your empty `app.webmanifest` file |
 | `native app install` | add custom native app install banner prompt support in your app manifest |
 
 ### Advanced Progressive Web Apps Features
