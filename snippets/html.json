@@ -1,5 +1,5 @@
 {
-	"Register Service Worker": {
+	"register service worker": {
 		"prefix": "register service worker",
 		"body": [
 			"$1",
@@ -14,10 +14,10 @@
 			"</script>",
 			"$1"
 		],
-		"description": "Register Service Worker"
+		"description": "register service worker"
 	},
 
-	"Add Web Manifest": {
+	"add web manifest": {
 		"prefix": "add web manifest to pages",
 		"body": [
 			"$1",
@@ -26,10 +26,10 @@
 			"<!-- end of Web Manifest -->",
 			"$1"
 		],
-		"description": "Add Web Manifest to pages"
+		"description": "add web manifest to pages"
 	},
 
-	"Add Theme Color": {
+	"add theme color": {
 		"prefix": "theme color",
 		"body": [
 			"$1",
@@ -38,7 +38,7 @@
 			"<!-- end-theme-color -->",
 			"$1"
 		],
-		"description": "Add theme color to pages"
+		"description": "add theme color to pages"
 	},
 
 	"workbox window": {
@@ -56,6 +56,6 @@
 			"</script>",
 			"$1"
 		],
-		"description": "Workbox Window"
+		"description": "workbox window"
 	}
 }
