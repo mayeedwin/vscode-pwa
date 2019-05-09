@@ -1,4 +1,4 @@
-## <img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/pwa.png" height="25"/> [](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
+## <img src=".vscode-pwa/icons/pwa.png" height="25"/> [](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa)
 
 Let's build Progressive Web Apps in VS Code on the go! [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅, read more [on this devdoc by pwafire.org](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/)
 
@@ -34,7 +34,9 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 ### Requirements
 
-    "vscode": "^1.28.0"
+```bash
+   "vscode": "^1.28.0"
+```
 
 ### Installation
 
