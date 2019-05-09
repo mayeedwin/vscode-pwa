@@ -91,7 +91,7 @@
 			"]",
 			"};"
 		],
-		"description": "Precache for node"
+		"description": "precache for node"
 	},
 
 	"workbox": {
