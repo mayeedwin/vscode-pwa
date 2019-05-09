@@ -97,7 +97,7 @@
 	"Workbox": {
 		"prefix": "import workbox",
 		"body": [
-			" importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.1.1/workbox-sw.js');",
+			" importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');",
 			" if (workbox) {",
 			"   console.log('[ PWA Fire Bundle ] Hello from Workbox');",
 			"$2",
