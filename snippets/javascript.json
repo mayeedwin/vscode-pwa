@@ -184,7 +184,7 @@
 		"body": [
 			"$1",
 			"workbox.setConfig({",
-			  "debug:",
+			  "debug:true",
 			"});",
 			"$1"
 		],
