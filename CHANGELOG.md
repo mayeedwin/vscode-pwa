@@ -2,6 +2,12 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
+## v0.2.30
+
+    - added more workbox code snippets i.e background sync, page reload etc
+    - deleted unused code
+    - case to small
+
 ## v0.2.2
 
     - updated docs

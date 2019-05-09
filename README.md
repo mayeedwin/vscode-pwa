@@ -26,7 +26,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 ### Advanced Progressive Web Apps Features
 
-> Add Background Sync - To your javascript source folder, create an empty **sync.js** file and type the following
+ - Add Background Sync - To your javascript source folder, create an empty **sync.js** file and type the following
  keyword in it to add [backgroud sync](https://pwafire.org/developer/docs/background-sync/)
 
  ```javascript
