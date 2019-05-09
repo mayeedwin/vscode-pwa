@@ -6,7 +6,7 @@
 			"console.log('Authored by Maye Edwin');",
 			"$1"
 		],
-		"description": "Authorship to console!"
+		"description": "print author to console!"
 	},
 
 	"service worker": {
@@ -242,6 +242,6 @@
 			" })(window);",
 			"$1"
 		],
-		"description": "Add Background Sync"
+		"description": "add background sync"
 	}
 }
