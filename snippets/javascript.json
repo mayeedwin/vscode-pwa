@@ -213,6 +213,18 @@
 		"description": "offer a page reload for users"
 	},
 
+	"workbox.cacheableResponse": {
+		"prefix": "workbox.cacheableResponse",
+		"body": [
+			"$1",
+			"new workbox.cacheableResponse.Plugin({",
+			" statuses: [0, 200],",
+			" })",
+			"$1"
+		],
+		"description": "caching based on status codes"
+	},
+
 	"background sync": {
 		"prefix": "background sync",
 		"body": [

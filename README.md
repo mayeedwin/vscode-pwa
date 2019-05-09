@@ -20,6 +20,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 | `workbox set config` | workbox set config for debug or production builds |
 | `workbox window` | add workbox window in your landing page for faster new service worker installs and refresh |
 | `workbox page reload` | offer a page reload for users |
+| `workbox.cacheableResponse` | cache based on numeric status code, the presence of a header with a specific value, or a combination of the two; [learn more here](https://developers.google.com/web/tools/workbox/modules/workbox-cacheable-response) |
 | `manifest` | add manifest meta data in your empty `app.webmanifest` file |
 | `native app install` | add custom native app install banner prompt support in your app manifest |
 
