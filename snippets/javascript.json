@@ -1,5 +1,5 @@
 {
-	"Print to console": {
+	"print to console": {
 		"prefix": "log vscode-pwa author",
 		"body": [
 			"$1",
@@ -9,7 +9,7 @@
 		"description": "Authorship to console!"
 	},
 
-	"Service Worker": {
+	"service worker": {
 		"prefix": "basic service worker",
 		"body": [
 			"$1",
@@ -71,7 +71,7 @@
 		"description": "workbox injectManifest"
 	},
 
-	"Precache for node": {
+	"precache for node": {
 		"prefix": "precache for node",
 		"body": [
 			"$1",
@@ -94,7 +94,7 @@
 		"description": "Precache for node"
 	},
 
-	"Workbox": {
+	"workbox": {
 		"prefix": "import workbox",
 		"body": [
 			" importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');",
@@ -179,7 +179,41 @@
 		"description": "Cache Only"
 	},
 
-	"Background Sync": {
+	"workbox set config": {
+		"prefix": "workbox set config",
+		"body": [
+			"$1",
+			"workbox.setConfig({",
+			  "debug:",
+			"});",
+			"$1"
+		],
+		"description": "workbox set config for debug or production builds"
+	},
+
+	"workbox page reload": {
+		"prefix": "workbox page reload",
+		"body": [
+			"$1",
+			"wb.addEventListener('waiting', (event) => {",
+			" const prompt = createUIPrompt({:",
+			"  onAccept: async () => {",
+			"   wb.addEventListener('controlling', (event) => {",
+			"    window.location.reload();",
+			"   });",
+			"   wb.messageSW({type: 'SKIP_WAITING'});",
+			"  },",
+			"  onReject: () => {",
+			"   prompt.dismiss();",
+			"  }",
+			" });",
+			"});",
+			"$1"
+		],
+		"description": "offer a page reload for users"
+	},
+
+	"background sync": {
 		"prefix": "background sync",
 		"body": [
 			"$1",

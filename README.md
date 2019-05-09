@@ -17,7 +17,9 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 | `workbox injectManifest` | add precache versioned urls config in your workbox `service-worker.js` file |
 | `import workbox` | import workbox in your service worker |
 | `workbox.strategies` | add cache strategies in your service worker |
+| `workbox set config` | workbox set config for debug or production builds |
 | `workbox window` | add workbox window in your landing page for faster new service worker installs and refresh |
+| `workbox page reload` | offer a page reload for users |
 | `manifest` | add manifest meta data in your empty `app.webmanifest` file |
 | `native app install` | add custom native app install banner prompt support in your app manifest |
 
