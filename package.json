@@ -21,7 +21,7 @@
 		"maye edwin"
 	],
 
-    "icon": ".vscode-pwa/icons/vscodepwa.png",
+    "icon": ".vscode-pwa/icons/vscodepwaicon.png",
     "galleryBanner": {
         "color": "#fafafa",
         "theme": "light"
