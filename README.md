@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/vscodepwa.png?raw=true" height="50"/></p>
 
-Let's build Progressive Web Apps in VS Code on the go! [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅, read more [on this devdoc by pwafire.org](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/)
+Let's build Progressive Web Apps in VS Code on the go! [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅, Our mission at [pwafire.org](https://pwafire.org) is make your developer environment as a **webdev** fully stacked up for best web development. Read more [on this devdoc by pwafire.org](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/)
 
 ### Commands to type in your editor
 
