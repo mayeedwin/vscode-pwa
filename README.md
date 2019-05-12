@@ -8,7 +8,7 @@ Our mission is to make your developer environment as a **webdev** fully stacked 
 
 ### Setting up the PWA Development Environment 
 
-We have a **pwadev tips* [repo available here](https://github.com/mayeedwin/pwadev-tips) to help guide you if you're just starting up or want to have your setup checklist done right ✅.
+We have a **pwadev tips** [repo available here](https://github.com/mayeedwin/pwadev-tips) to help guide you if you're just starting up or want to have your setup checklist done right ✅.
 ### Commands to type in your editor
 
 Write the **Service Worker** and **App Manifest** really quick and like a pro!
