@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/vscodepwa.png?raw=true" height="50"/></p>
 
-Build Progressive Web Apps in VS Code on the go and like a pro 👊. [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅, 
+Build Progressive Web Apps in VS Code on the go and like a pro 👊. We have [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅ fully stacked too.
 
 ### About [pwafire.org](https://pwafire.org)
 
