@@ -2,7 +2,7 @@
 	"name": "vscode-pwa",
 	"displayName": " PWA VS Code",
 	"description": "Progressive Web Apps Code Snippets (Including Workbox). Let's build Progressive Web Apps in VS Code on the go!",
-	"version": "0.2.34",
+	"version": "0.2.35",
 	"publisher": "mayeedwin",
 	"engines": {
 		"vscode": "^1.28.0"
