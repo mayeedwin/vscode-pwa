@@ -2,6 +2,12 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
+## v0.2.37
+
+    - add assets and images cache snippets
+
+## v0.2.30
+
 ## v0.2.36
 
     - fix bugs and compatibility
