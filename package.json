@@ -41,7 +41,7 @@
 			},
 			{
 				"language": "json",
-				"path": "./snippets/manifest.json"
+				"path": "./snippets/appmanifest.json"
 			}
 		]
 	},
