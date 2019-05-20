@@ -1,8 +1,8 @@
 {
 	"name": "vscode-pwa",
 	"displayName": " PWA VS Code",
-	"description": "Progressive Web Apps Code Snippets (Including Workbox). Let's build Progressive Web Apps in VS Code on the go!",
-	"version": "0.2.37",
+	"description": "Progressive Web Apps Code Snippets (Including ✅ Workbox Support)",
+	"version": "0.2.38",
 	"publisher": "mayeedwin",
 	"engines": {
 		"vscode": "^1.28.0"
@@ -21,7 +21,7 @@
 		"maye edwin"
 	],
 
-    "icon": ".vscode-pwa/icons/vscodepwaicon.png",
+    "icon": ".github/images/icons/vscodepwaicon.png",
     "galleryBanner": {
         "color": "#fafafa",
         "theme": "light"

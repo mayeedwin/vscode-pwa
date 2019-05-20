@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.vscode-pwa/icons/vscodepwa.png?raw=true" height="50"/></p>
+<p align="center"><img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.github/images/icons/vscodepwa.png?raw=true" height="50"/></p>
 
 Build Progressive Web Apps in VS Code on the go and like a pro 👊. We have [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅ fully stacked too.
 
@@ -60,7 +60,7 @@ Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press en
 
 ### Demo with PWA VS Code in play
 
-Load [preview in your browser here](.vscode-pwa/vscode-pwa-vid.gif)
+Load [preview in your browser here](.github/images/vscode-pwa-vid.gif)
 
 ### Known Issues
 
