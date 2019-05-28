@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.github/images/icons/vscodepwa.png?raw=true" height="75"/></p>
+<p align="center"><img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.github/images/icons/vscodepwa.png?raw=true" height="95"/></p>
 
 Build Progressive Web Apps in VS Code on the go and like a pro 👊. We have [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅ fully stacked too.
 
