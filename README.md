@@ -20,7 +20,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 | `theme color` | add theme color in your pages head tag |
 | `basic service worker` | create simple service worker for simple static sites |
 | `precache for npm` | workbox precache config code snippet in your say `sw-config.js` file |
-| `workbox-cli devDependencies` | adding workbox cli de dependancies in your `package.json`file |
+| `workbox-cli devDependencies` | adding workbox cli de dependancies in your `package.json` file |
 | `workbox injectManifest` | add precache versioned urls config in your workbox `service-worker.js` file |
 | `import workbox` | import workbox in your service worker |
 | `workbox.strategies` | add cache strategies in your service worker |
