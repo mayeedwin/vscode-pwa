@@ -16,7 +16,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 | Command | Purpose and where to type |
 | --- | --- |
 | `register service worker` | register service worker in your landing page say `index.html` |
-| `add web manifest to pages` | link app.webmanifest to your pages in the `head tag` |
+| `add web manifest to pages` | link `app.webmanifest` to your pages in the `head tag` |
 | `theme color` | add theme color in your pages head tag |
 | `basic service worker` | create simple service worker for simple static sites |
 | `precache for npm` | workbox precache config code snippet in your say `sw-config.js` file |
