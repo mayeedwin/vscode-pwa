@@ -2,30 +2,28 @@
 	"name": "vscode-pwa",
 	"displayName": " PWA VS Code",
 	"description": "Progressive Web Apps Code Snippets (Including ✅ Workbox Support)",
-	"version": "0.2.38",
+	"version": "0.3.0",
 	"publisher": "mayeedwin",
 	"engines": {
 		"vscode": "^1.28.0"
 	},
 	"author": {
-        "name": "Maye Edwin" 
-    },
-
+		"name": "Maye Edwin"
+	},
 	"keywords": [
-        "pwa",
-        "progressive web apps",
+		"pwa",
+		"progressive web apps",
 		"service worker",
 		"manifest",
 		"workbox",
 		"pwafire",
 		"maye edwin"
 	],
-
-    "icon": ".github/images/icons/vscodepwaicon.png",
-    "galleryBanner": {
-        "color": "#fafafa",
-        "theme": "light"
-    },
+	"icon": ".github/images/icons/vscodepwaicon.png",
+	"galleryBanner": {
+		"color": "#fafafa",
+		"theme": "light"
+	},
 	"categories": [
 		"Snippets"
 	],
@@ -46,12 +44,12 @@
 		]
 	},
 	"bugs": {
-        "url": "https://github.com/mayeedwin/vscode-pwa/issues/new/choose",
-        "email": "mayedwine1@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mayeedwin/vscode-pwa"
-    },
-    "homepage": "https://github.com/mayeedwin/vscode-pwa/blob/master/README.md"
+		"url": "https://github.com/mayeedwin/vscode-pwa/issues/new/choose",
+		"email": "mayedwine1@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mayeedwin/vscode-pwa"
+	},
+	"homepage": "https://github.com/mayeedwin/vscode-pwa/blob/master/README.md"
 }
