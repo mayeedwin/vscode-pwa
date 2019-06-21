@@ -6,7 +6,7 @@ Build Progressive Web Apps in VS Code on the go and like a pro 👊. We have [Wo
 
 Our mission is to make your developer environment as a **webdev** fully stacked up for best web development practices with Progressive Web Apps. 
 
-We've a Developer Guide [published here](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/) and updated with latest update for this Extension. 
+We've an Official Developer Guide [published here](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/) and updated with latest update for this Extension. 
 
 ### Setting up the PWA Development Environment 
 
