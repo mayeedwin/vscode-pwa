@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/mayeedwin/vscode-pwa/blob/master/.github/images/icons/vscodepwa.png?raw=true" height="100"/></p>
 
-Build Progressive Web Apps in VS Code on the go and like a pro 👊. We have [Workbox Support](https://developers.google.com/web/tools/workbox/) ✅ fully stacked too.
+Increase your productivity! Build Progressive Web Apps in VS Code on the go and like a pro. We have [Workbox Support](https://developers.google.com/web/tools/workbox/) fully stacked too.
 
 ### About [pwafire.org](https://pwafire.org)
 
@@ -10,7 +10,7 @@ We've an Official Developer Guide [published here](https://pwafire.org/developer
 
 ### Setting up the PWA Development Environment 
 
-We have a **pwadev tips** [repo available here](https://github.com/mayeedwin/pwadev-tips) to help guide you if you're just starting up or want to have your setup checklist done right ✅.
+We have a **pwadev tips** [repo available here](https://github.com/mayeedwin/pwadev-tips) to help guide you if you're just starting up or want to have your setup checklist done right.
 ### Commands to type in your editor
 
 Write the **Service Worker** and **App Manifest** really quick and like a pro!
