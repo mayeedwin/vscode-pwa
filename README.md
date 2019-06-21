@@ -77,7 +77,9 @@ All good to go with beta!
     - custom install button
 
     - custom share button
+     
+    - typescript support
 
-Initial release of vscode-pwa beta!
+Latest release of vscode-pwa beta!
 
 **Enjoy 😊 🐥** and thanks for checking it out. Let's connect on twitter [@mayeedwin1](https://twitter.com/mayeedwin1) : )
