@@ -257,7 +257,7 @@
 			"    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
 			"   }),",
 			"  ],",
-			" }),",
+			" })",
 			");"
 		],
 		"description": "cache javascript and css"
@@ -276,10 +276,10 @@
 			"    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
 			"   }),",
 			"  ],",
-			" }),",
+			" })",
 			");"
 		],
-		"description": "cache javascript and css"
+		"description": "cache fonts"
 	},
 
 	"cache requests from external origins": {
@@ -289,7 +289,7 @@
 			"workbox.routing.registerRoute(",
 			" 'https://fonts.googleapis.com/css?family=Product%20Sans',",
 			" new workbox.strategies.CacheFirst({",
-			"  cacheName: 'assets',",
+			"  cacheName: 'external-origins',",
 			"  plugins: [",
 			"   new workbox.cacheableResponse.Plugin({",
 			"    statuses: [0, 200],",
@@ -298,7 +298,7 @@
 			"    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
 			"   }),",
 			"  ],",
-			" }),",
+			" })",
 			");"
 		],
 		"description": "cache requests from external origins"
