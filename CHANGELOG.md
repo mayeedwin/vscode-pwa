@@ -4,6 +4,12 @@ All notable changes to the "vscode-pwa" extension will be documented here.
 
 ## v0.3.10
 
+    - use arrow function syntax
+
+## v0.2.38
+
+## v0.3.10
+
     - cache google fonts 
     - cache resources from external origins 
 
