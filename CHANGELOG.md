@@ -2,7 +2,7 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
-## 0.3.15
+## 0.3.16
     - default to a minimal app manifest
     -  include a 192x192 pixel icon and a 512x512 pixel icon. **Chrome** will automatically scale the icon for the device
 
