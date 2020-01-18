@@ -50,7 +50,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 ### Requirements
 
 ```bash
-   "vscode": "^1.28.0"
+   "vscode": "^1.8.0"
 ```
 
 ### Installation
