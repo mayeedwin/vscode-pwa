@@ -121,6 +121,48 @@
 			" }"
 		]
 	},
+  
+  "workbox-node": {
+		"prefix": "import workbox npm modules",
+		"body": [
+			"import { registerRoute } from 'workbox-routing';",
+      "import { CacheFirst } from 'workbox-strategies';",
+      "import { Plugin as ExpirationPlugin } from 'workbox-expiration';",
+      "import { CacheableResponsePlugin } from 'workbox-cacheable-response';",
+      "import {* as googleAnalytics} from 'workbox-google-analytics';"
+		],
+		"description": "workbox node modules"
+	},
+  
+  
+    "workbox-register-route": {
+		"prefix": "workbox register route for npm",
+		"body": [
+			"registerRoute(",
+      " // cache all images in './images/' directory",
+      " new RegExp('/images/'),",
+      " // use cache-first workbox strategy",
+      " new CacheFirst({",
+      "   cacheName: 'image-cache',",
+      "   plugins: [",
+      "      new ExpirationPlugin({",
+      "         maxEntries: 20,",
+      "      }),",
+      "   ],",
+      " })",
+      ");"
+		],
+		"description": "workbox register route"
+	},
+
+    "workbox-google-analytics": {
+		"prefix": "workbox google analytics for npm",
+		"body": [
+			"googleAnalytics.initialize();"
+		],
+		"description": "enable workbox google analytics for npm "
+	},
+
 
 	"Workbox cache strategies": {
 		"prefix": "workbox.strategies",
