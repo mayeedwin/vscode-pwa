@@ -265,7 +265,7 @@
 	},
 
 	"workbox.cacheableResponse": {
-		"prefix": "workbox.cacheableResponse",
+		"prefix": "workbox cacheable response",
 		"body": [
 			"$1",
 			"new workbox.cacheableResponse.Plugin({",
