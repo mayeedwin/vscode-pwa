@@ -103,9 +103,9 @@
 	},
 
 	"workbox": {
-		"prefix": "import workbox",
+		"prefix": "import workbox cdn",
 		"body": [
-			" importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');",
+			" importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');",
 			" if (workbox) {",
 			"   console.log('[ PWA Fire Bundle ] Hello from Workbox');",
 			"$2",
@@ -119,7 +119,8 @@
 			" } else {",
 			"   console.log('Boo! Workbox failed to load 😬');",
 			" }"
-		]
+		],
+		"description": "import workbox cnd version"
 	},
   
   "workbox-node": {
@@ -165,7 +166,7 @@
 
 
 	"Workbox cache strategies": {
-		"prefix": "workbox.strategies",
+		"prefix": "workbox strategies",
 		"body": [
 			"$1",
 			"/* change strategy method to fit your pwa needs,",
@@ -178,7 +179,7 @@
 			"      new workbox.cacheableResponse.Plugin({",
 			"       statuses: [0, 200],",
 			"      }),",
-			"      new workbox.expiration.Plugin({",
+			"      new workbox.expiration.ExpirationPlugin({",
 			"       maxAgeSeconds: 60 * 60 * 24 * 1,",
 			"      }),",
 			"    ],",
@@ -186,7 +187,7 @@
 			");",
 			"$1"
 		],
-		"description": "Workbox cache strategies"
+		"description": "add Workbox cache strategies"
 	},
 
 	"StaleWhileRevalidate": {
@@ -229,8 +230,8 @@
 		"description": "Cache Only"
 	},
 
-	"workbox set config": {
-		"prefix": "workbox set config",
+	"workbox debug": {
+		"prefix": "workbox debug",
 		"body": [
 			"$1",
 			"workbox.setConfig({",
