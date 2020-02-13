@@ -2,13 +2,7 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
-## 0.4.2
-
-    - upgrade to workbox v5.0.0
-    - update commands ; **import workbox** to **import workbox cdn**, **workbox.strategies** to **workbox strategies** and **workbox set config** to **workbox debug mode**
-    
 ## 0.4.1
-
     - add workbox bundler setup, more eloborated docs for guide!
     - workbox 5.0 support
     - fix little bug, type fix!

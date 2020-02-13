@@ -33,11 +33,16 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 | Command                     | Purpose and where to type                                                                                                                                                                                              |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `import workbox cdn`            | import workbox cdn version in your service worker                                                                                                                                                                                  |
+| `import workbox cdn`            | import workbox in your service worker                                                                                                                                                                                  |
 | `workbox strategies`        | add cache strategies in your service worker                                                                                                                                                                            |
 | `cache assets`              | make your JS and CSS ⚡ fast by returning the assets from the cache, while making sure they are updated in the background for the next use in your workbox `service-worker.js` file                                    |
-
-| `cache images`              | serve images quickly from the cache, while making sure you don’t cache them indefinitely, consuming your users' storage in your workbox `service-worker.js` file                                                   |
+| `cache images`              | serve images quickly from the cache, while making sure you don’t cache them indefinitely, consuming your users' storage in your workbox `service-worker.js` file                                                       |
+| `cache fonts`               | rely on google fonts or other fonts being available offline after the user has visited your site                                                                                                                       |
+| `cache external orgins`     | cache external resources from external orgins for example boostrap css                                                                                                                                                 |
+| `workbox debug mode`        | workbox set config for debug or production builds                                                                                                                                                                      |
+| `workbox window`            | add workbox window in your landing page for faster new service worker installs and refresh                                                                                                                             |
+| `workbox page reload`       | offer a page reload for users                                                                                                                                                                                          |
+| `workbox cacheable response` | cache based on numeric status code, the presence of a header with a specific value, or a combination of the two; [learn more here](https://developers.google.com/web/tools/workbox/modules/workbox-cacheable-response) |
 
 ### Setting up Workbox pre-cache
 
