@@ -4,6 +4,10 @@ All notable changes to the "vscode-pwa" extension will be documented here.
 
 ## 0.4.3
 
+    - Fixed bug with cacheable response plugin
+
+## 0.4.3
+
     - upgrade to workbox v5.0.0
     - update commands ; **import workbox** to **import workbox cdn**, **workbox.strategies** to **workbox strategies** and **workbox set config** to **workbox debug mode**
     
