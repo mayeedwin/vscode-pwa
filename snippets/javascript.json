@@ -92,7 +92,7 @@
       "  clientsClaim,",
       "  cacheNames,",
       "  setCacheNameDetails,",
-      "  setCatchHandler",
+      "  setCatchHandler,",
       "  NavigationRoute,",
       "  registerRoute,",
       "  preCaching,",
