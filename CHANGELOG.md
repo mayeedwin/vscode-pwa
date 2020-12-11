@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-pwa" extension will be documented here.
 
+## 0.5.1+
+
+    - Changed syntax, workbox v6+
+
 ## 0.4.5
 
     - Fixed bug with cacheable response plugin

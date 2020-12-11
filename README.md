@@ -16,12 +16,12 @@ We have a **pwadev tips** [repo available here](https://github.com/mayeedwin/pwa
 
 Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
-| Command                     | Purpose and where to type                                     |
-| --------------------------- | ------------------------------------------------------------- |
-| `register.service.worker`   | register service worker in your landing page say `index.html` |
-| `add.web.manifest` | link `app.webmanifest` to your pages in the `head tag`        |
-| `theme.color`               | add theme color in your pages head tag                        |
-| `app.manifest`                  | add manifest meta data in your empty `app.webmanifest` file   |
+| Command                   | Purpose and where to type                                     |
+| ------------------------- | ------------------------------------------------------------- |
+| `register.service.worker` | register service worker in your landing page say `index.html` |
+| `add.web.manifest`        | link `app.webmanifest` to your pages in the `head tag`        |
+| `theme.color`             | add theme color in your pages head tag                        |
+| `app.manifest`            | add manifest meta data in your empty `app.webmanifest` file   |
 
 ### Simple basic Service Worker
 
@@ -31,23 +31,21 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 ### Commands to type in your editor for Workbox CDN
 
-| Command                     | Purpose and where to type                                                                                                                                                                                              |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `workbox.cdn`                 | import workbox in your service worker                                                                                                                                                                                 ||
-| `workbox.assets`                       | make your JS and CSS ⚡ fast by returning the assets from the cache, while making sure they are updated in the background for the next use in your workbox `service-worker.js` file                                    |
-| `workbox.images`                       | serve images quickly from the cache, while making sure you don’t cache them indefinitely, consuming your users' storage in your workbox `service-worker.js` file                                                       |
-| `workbox.external`              | cache external resources from external orgins for example boostrap css, fonts                                                                                                                                                 |
-| `workbox.registerRoute`   | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |
-| `workbox.debug`                 | workbox set config for debug or production builds                                                                                          | `workbox.registerRoute`   | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |                                                                            |
-| `workbox.window`                     | add workbox window in your landing page for faster new service worker installs and refresh                                                                                                                             | 
-
-                                                                                                         
+| Command                 | Purpose and where to type                                                                                                                                                           |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- | --- |
+| `workbox.cdn`           | import workbox in your service worker                                                                                                                                               |                         |
+| `workbox.assets`        | make your JS and CSS ⚡ fast by returning the assets from the cache, while making sure they are updated in the background for the next use in your workbox `service-worker.js` file |
+| `workbox.images`        | serve images quickly from the cache, while making sure you don’t cache them indefinitely, consuming your users' storage in your workbox `service-worker.js` file                    |
+| `workbox.external`      | cache external resources from external orgins for example boostrap css, fonts                                                                                                       |
+| `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it                                                                      |
+| `workbox.debug`         | workbox set config for debug or production builds                                                                                                                                   | `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |     |
+| `workbox.window`        | add workbox window in your landing page for faster new service worker installs and refresh                                                                                          |
 
 ### Setting up Workbox pre-cache
 
-| Command                       | Purpose and where to type                                                   |
-| ----------------------------- | --------------------------------------------------------------------------- |
-| `workbox.precache`            | workbox precache config code snippet in your say `sw-config.js` file        |
+| Command            | Purpose and where to type                                            |
+| ------------------ | -------------------------------------------------------------------- |
+| `workbox.precache` | workbox precache config code snippet in your say `sw-config.js` file |
 
 ### Commands to type in your editor for Workbox packages, using a bundler
 
@@ -56,11 +54,11 @@ then you use import statements to directly reference the Workbox modules you wan
 
 Read more [here](https://developers.google.com/web/tools/workbox/guides/using-bundlers)
 
-| Command                            | Purpose and where to type                                                                     |
-| ---------------------------------- | --------------------------------------------------------------------------------------------- |
-| `workbox.packages`       | import all workbox npm modules in your custom workbox service worker config` file                       |
-| `workbox.registerRoute`   | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |
-| `workbox.analytics` | add offline google analytics in your workbox `service-worker.js` file, at the bottom.         |
+| Command                 | Purpose and where to type                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `workbox.packages`      | import all workbox npm modules in your custom workbox service worker config` file                              |
+| `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |
+| `workbox.analytics`     | add offline google analytics in your workbox `service-worker.js` file, at the bottom.                          |
 
 ### Advanced Progressive Web Apps Features
 
