@@ -31,7 +31,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 ### Commands to type in your editor for Workbox CDN
 
-More commands on this extension's [repo docs here](https://github.com/mayeedwin/vscode-pwa)
+More commands on this extension's [repo docs here](https://github.com/mayeedwin/vscode-pwa/docs)
 
 ### Advanced Progressive Web Apps Features
 
