@@ -29,18 +29,18 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 | ---------------------- | ---------------------------------------------------- |
 | `basic.service.worker` | create simple service worker for simple static sites |
 
-### Commands to type in your editor for CDN Workbox
+### Commands to type in your editor for Workbox CDN
 
 | Command                     | Purpose and where to type                                                                                                                                                                                              |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `workbox.cdn`                 | import workbox in your service worker                                                                                                                                                                                  |
-                                                                                                                                                                           |
+| `workbox.strategies`                 | add cache strategies in your service worker                                                                                                                                                                            |
 | `workbox.assets`                       | make your JS and CSS ⚡ fast by returning the assets from the cache, while making sure they are updated in the background for the next use in your workbox `service-worker.js` file                                    |
 | `workbox.images`                       | serve images quickly from the cache, while making sure you don’t cache them indefinitely, consuming your users' storage in your workbox `service-worker.js` file                                                       |
-
-| `workbox.external`              | cache external resources from external orgins for example boostrap css,fonts                                                                                                                                                 |
+| `workbox.external`              | cache external resources from external orgins for example boostrap css, fonts                                                                                                                                                 |
 | `workbox.debug`                 | workbox set config for debug or production builds                                                                                                                                                                      |
-| `workbox.window`                     | add workbox window in your landing page for faster new service worker installs and refresh                                                                                                                             |
+| `workbox.window`                     | add workbox window in your landing page for faster new service worker installs and refresh                                                                                                                             | 
+
                                                                                                          
 
 ### Setting up Workbox pre-cache
