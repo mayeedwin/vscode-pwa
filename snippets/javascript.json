@@ -1,386 +1,280 @@
 {
-	"print to console": {
-		"prefix": "log vscode-pwa author",
-		"body": [
-			"$1",
-			"console.log('Authored by Maye Edwin');",
-			"$1"
-		],
-		"description": "print author to console!"
-	},
-
-	"service worker": {
-		"prefix": "basic service worker",
-		"body": [
-			"$1",
-			"self.addEventListener('fetch', (event) => {",
-			" event.respondWith(caches.open('cache').then((cache) => {",
-			"  return cache.match(event.request).then((response) => {",
-			"   console.log(\"cache request: \" + event.request.url);",
-			"   var fetchPromise = fetch(event.request).then((networkResponse) => {",
-			"   // if we got a response from the cache, update the cache  ",
-			"   console.log(\"fetch completed: \" + event.request.url, networkResponse);",
-			"   if (networkResponse) {",
-			"    console.debug(\"updated cached page: \" + event.request.url, networkResponse);",
-			"    cache.put(event.request, networkResponse.clone());}",
-			"   return networkResponse;",
-			"  }, function (event) {",
-			"  // rejected promise - just ignore it, we're offline!   ",
-			"  console.log(\"Error in fetch()\", event);",
-			"  event.waitUntil(",
-			"   // our 'cache' here is named *cache* in the caches.open()",
-			"   caches.open('cache').then((cache) => {",
-			"    return cache.addAll",
-			"      ([",
-			"      // cache.addAll(), takes a list of URLs, then fetches them from ",
-			"      // the server and adds the response to the cache ",
-			"      './index.html', // cache your index page",
-			"      './assets/css/app.main.css', // cache app.main css",
-			"      './images/*', // cache all images",
-			"      './app.webmanifest',",
-			"      // external url fetch, twitter's as an example",
-			"      'https://platform.twitter.com/widgets.js',",
-			"     ]);",
-			"    }) );",
-			"   });",
-			"   // respond from the cache, or the network",
-			"   return response || fetchPromise;",
-			" });",
-			" }));",
-			"});",
-			"$1",
-			"// always updating i.e latest version available",
-			"self.addEventListener('install', (event) => {",
-			"   self.skipWaiting();",
-			"   console.log(\"Latest version installed!\");",
-			"});",
-			"$1"
-		],
-		"description": "Basic Service Worker"
-	},
-
-	"workbox-cli": {
-		"prefix": "workbox-cli devDependencies",
-		"body": [
-			"$1",
-			"\"workbox-cli\": \"^3.0.1\"",
-			"$1"
-		],
-		"description": "workbox-cli"
-	},
-
-	"workbox injectManifest": {
-		"prefix": "workbox injectManifest",
-		"body": [
-			"$1",
-			"&& workbox injectManifest sw-config.js",
-			"$1"
-		],
-		"description": "workbox injectManifest"
-	},
-
-	"precache for node": {
-		"prefix": "precache for node",
-		"body": [
-			"$1",
-			"module.exports = {",
-			"\"globDirectory\": \"build/\", // the base directory you wish to match globPatterns against,",
-			"\"globPatterns\": [",
-			"// edit to add all file to cache;",
-			"\"**/*.css\", // eg cache all css files, images etc in the root folder",
-			"\"index.html\", // cache index page",
-			"\"app.webmanifest\",",
-			"/* add more assets or",
-			"     resources to cache */",
-			"\"swSrc\": \"src/service-worker.js\", // the path and filename of the Service Worker file that will be created by the build process.",
-			"\"globIgnores\": [",
-			"\"../sw-config.js\"",
-			"$1",
-			"]",
-			"};"
-		],
-		"description": "precache for node"
-	},
-
-	"workbox": {
-		"prefix": "import workbox cdn",
-		"body": [
-			" importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');",
-			" if (workbox) {",
-			"   console.log('[ PWA Fire Bundle ] Hello from Workbox');",
-			"$2",
-			"$2",
-			"     /* add workbox cache",
-			"          strategies */",
-			"$2",
-			"$2",
-			"   workbox.core.skipWaiting();",
-			"   workbox.core.clientsClaim();",
-			" } else {",
-			"   console.log('Boo! Workbox failed to load 😬');",
-			" }"
-		],
-		"description": "import workbox cnd version"
-	},
-  
+  "print to console": {
+    "prefix": "extension.author",
+    "body": ["$1", "console.log('Authored by Maye Edwin');", "$1"],
+    "description": "Hello from Maye!"
+  },
+  "service worker": {
+    "prefix": "basic.service.worker",
+    "body": [
+      "$1",
+      "// Basic service worker...",
+      "self.addEventListener('fetch', (event) => {",
+      " event.respondWith(caches.open('cache').then((cache) => {",
+      "  return cache.match(event.request).then((response) => {",
+      "   console.log(\"cache request: \" + event.request.url);",
+      "   const fetchPromise = fetch(event.request).then((networkResponse) => {",
+      "   // If we got a response from the cache, update the cache...",
+      "   console.log(\"fetch completed: \" + event.request.url, networkResponse);",
+      "   if (networkResponse) {",
+      "    console.debug(\"updated cached page: \" + event.request.url, networkResponse);",
+      "    cache.put(event.request, networkResponse.clone());}",
+      "   return networkResponse;",
+      "  }, (event) => {",
+      "  // Rejected promise - just ignore it, we're offline...",
+      "  console.log(\"Error in fetch()\", event);",
+      "  event.waitUntil(",
+      "   // Our 'cache' here is named *cache* in the caches.open()...",
+      "   caches.open('cache').then((cache) => {",
+      "    return cache.addAll",
+      "      ([",
+      "      // List : cache.addAll(), takes a list of URLs, then fetches them from...",
+      "      // The server and adds the response to the cache...",
+      "      './index.html', // cache your index page",
+      "      './assets/css/app.main.css', // cache app.main css",
+      "      './images/*', // cache all images",
+      "      './app.webmanifest',",
+      "      // External url fetch, twitter's as an example...",
+      "      'https://platform.twitter.com/widgets.js',",
+      "     ]);",
+      "    }) );",
+      "   });",
+      "   // Respond from the cache, or the network...",
+      "   return response || fetchPromise;",
+      " });",
+      " }));",
+      "});",
+      "$1",
+      "// Always updating i.e latest version available...",
+      "self.addEventListener('install', (event) => {",
+      "   self.skipWaiting();",
+      "   console.log(\"Latest version installed!\");",
+      "});",
+      "$1"
+    ],
+    "description": "Basic Service Worker"
+  },
+  "precache for node": {
+    "prefix": "workbox.precache",
+    "body": [
+      "$1",
+      "module.exports = {",
+      "\"globDirectory\": \"build/\", // the base directory you wish to match globPatterns against,",
+      "\"globPatterns\": [",
+	  "// Add more assets or resources to cache...",
+      "\"**/*.css\",",
+      "\"index.html\",",
+      "\"app.webmanifest\",",
+	  "// The path and filename of the Service Worker file that will be created by the build process...",
+      "\"swSrc\": \"src/service-worker.js\",",
+      "\"globIgnores\": [",
+      "\"../sw-config.js\"",
+      "$1",
+      "]",
+      "};"
+    ],
+    "description": "Workbox precache"
+  },
+  "workbox": {
+    "prefix": "workbox.cdn",
+    "body": [
+      " importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js');",
+      " if (workbox) {",
+      "   console.log('[ Hello ] from Maye');",
+      "const wkb = {",
+      "  ...workbox.core,",
+      "  ...workbox.routing,",
+      "  ...workbox.precaching,",
+      "  ...workbox.strategies,",
+      "  ...workbox.cacheableResponse,",
+      "}",
+      "const {",
+      "  clientsClaim,",
+      "  cacheNames,",
+      "  setCacheNameDetails,",
+      "  setCatchHandler",
+      "  NavigationRoute,",
+      "  registerRoute,",
+      "  preCaching,",
+      "  NetworkFirst,",
+      "  NetworkOnly,",
+      "  CacheFirst,",
+      "  CacheOnly,",
+      "  StaleWhileRevalidate,",
+      "  CacheExpiration,",
+      "  ExpirationPlugin,",
+      "  CacheableResponsePlugin",
+      "  } = wkb;",
+      "$2",
+      "$2",
+      "     /* here is your workbox",
+      "          workspace */",
+      "$2",
+      "$2",
+      "   self.skipWaiting();",
+      "   clientsClaim();",
+      " } else {",
+      "   console.log('Boo! Workbox failed to load 😬');",
+      " }"
+    ],
+    "description": "Import workbox cnd version"
+  },
   "workbox-node": {
-		"prefix": "import workbox npm modules",
-		"body": [
-			"import { registerRoute } from 'workbox-routing';",
-      "import { CacheFirst } from 'workbox-strategies';",
+    "prefix": "workbox.packages",
+    "body": [
+      "import { registerRoute } from 'workbox-routing';",
+      "import { CacheFirst, CacheOnly, NetWorkFirst, NetworkOnly, StaleWhileRevalidate } from 'workbox-strategies';",
       "import { Plugin as ExpirationPlugin } from 'workbox-expiration';",
       "import { CacheableResponsePlugin } from 'workbox-cacheable-response';",
       "import * as googleAnalytics from 'workbox-google-analytics';"
-		],
-		"description": "workbox node modules"
-	},
-  
-  
-    "workbox-register-route": {
-		"prefix": "workbox register route for npm",
-		"body": [
-			"registerRoute(",
-      " // cache all images in './images/' directory",
-      " new RegExp('/images/'),",
-      " // use cache-first workbox strategy",
-      " new CacheFirst({",
-      "   cacheName: 'image-cache',",
+    ],
+    "description": "Import workbox packages"
+  },
+  "workbox-register-route": {
+    "prefix": "workbox.registerRoute",
+    "body": [
+      "// Cache routes...",
+      "registerRoute(",
+      "// Check to see if the request is a navigation to a new page...",
+      "({ request }) => request.mode === 'navigate',",
+      "// Use a Network First caching strategy...",
+      " new NetworkFirst({",
+      "   // Put all cached files in a cache named 'pages'...",
+      "   cacheName: 'pages',",
       "   plugins: [",
+      "      // Ensure that only requests that result in a 200 status are cached...",
+      "      new CacheableResponsePlugin({",
+      "         statuses: [200]",
+      "      }),",
       "      new ExpirationPlugin({",
       "         maxEntries: 20,",
+      "         maxAgeSeconds: 1 * 24 * 60 * 60 // 1 Day",
       "      }),",
       "   ],",
       " })",
       ");"
-		],
-		"description": "workbox register route"
-	},
-
-    "workbox-google-analytics": {
-		"prefix": "workbox google analytics for npm",
-		"body": [
-			"googleAnalytics.initialize();"
-		],
-		"description": "enable workbox google analytics for npm "
-	},
-
-
-	"Workbox cache strategies": {
-		"prefix": "workbox strategies",
-		"body": [
-			"$1",
-			"/* change strategy method to fit your pwa needs,",
-			"  update RegExp dir/route and cache name */",
-			"workbox.routing.registerRoute(",
-			"   new RegExp('talks/'),",
-			"   new workbox.strategies.StaleWhileRevalidate({",
-			"     cacheName: 'talks/',",
-			"     plugins: [",
-			"      new workbox.expiration.ExpirationPlugin({",
-			"       maxAgeSeconds: 60 * 60 * 24 * 1,",
-			"      }),",
-			"    ],",
-			"  })",
-			");",
-			"$1"
-		],
-		"description": "add Workbox cache strategies"
-	},
-
-	"StaleWhileRevalidate": {
-		"prefix": "StaleWhileRevalidate",
-		"body": [
-			"StaleWhileRevalidate"
-		],
-		"description": "Stale-While-Revalidate"
-	},
-
-	"CacheFirst": {
-		"prefix": "CacheFirst",
-		"body": [
-			"CacheFirst"
-		],
-		"description": "Cache First (Cache Falling Back to Network)"
-	},
-	
-	"NetworkFirst": {
-		"prefix": "NetworkFirst",
-		"body": [
-			"NetworkFirst"
-		],
-		"description": "Network First (Network Falling Back to Cache)"
-	},
-
-	"NetworkOnly": {
-		"prefix": "NetworkOnly",
-		"body": [
-			"NetworkOnly"
-		],
-		"description": "Network Only"
-	},
-	
-	"CacheOnly": {
-		"prefix": "CacheOnly",
-		"body": [
-			"CacheOnly"
-		],
-		"description": "Cache Only"
-	},
-
-	"workbox debug": {
-		"prefix": "workbox debug",
-		"body": [
-			"$1",
-			"workbox.setConfig({",
-			  "debug:true",
-			"});",
-			"$1"
-		],
-		"description": "workbox set config for debug or production builds"
-	},
-
-	"workbox page reload": {
-		"prefix": "workbox page reload",
-		"body": [
-			"$1",
-			"wb.addEventListener('waiting', (event) => {",
-			" const prompt = createUIPrompt({:",
-			"  onAccept: async () => {",
-			"   wb.addEventListener('controlling', (event) => {",
-			"    window.location.reload();",
-			"   });",
-			"   wb.messageSW({type: 'SKIP_WAITING'});",
-			"  },",
-			"  onReject: () => {",
-			"   prompt.dismiss();",
-			"  }",
-			" });",
-			"});",
-			"$1"
-		],
-		"description": "offer a page reload for users"
-	},
-
-	"workbox.cacheableResponse": {
-		"prefix": "workbox cacheable response",
-		"body": [
-			"$1",
-			"new workbox.cacheableResponse.Plugin({",
-			" statuses: [0, 200],",
-			" })",
-			"$1"
-		],
-		"description": "caching based on status codes"
-	},
-
-	"cache-images": {
-		"prefix": "cache images",
-		"body": [
-			"workbox.routing.registerRoute(",
-			" /\\.(?:png|gif|jpg|jpeg|svg)$/,",
-			" new workbox.strategies.CacheFirst({",
-			"  cacheName: 'images',",
-			"  plugins: [",
-			"   new workbox.expiration.Plugin({",
-			"    maxEntries: 60,",
-			"    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
-			"   }),",
-			"  ],",
-			" }),",
-			");"
-		],
-		"description": "workbox cache images"
-	},
-
-	"cache-assets": {
-		"prefix": "cache assets",
-		"body": [
-			"workbox.routing.registerRoute(",
-			" /\\.(?:png|gif|jpg|jpeg|svg)$/,",
-			" new workbox.strategies.CacheFirst({",
-			"  cacheName: 'assets',",
-			"  plugins: [",
-			"   new workbox.expiration.Plugin({",
-			"    maxEntries: 60,",
-			"    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
-			"   }),",
-			"  ],",
-			" })",
-			");"
-		],
-		"description": "cache javascript and css"
-	},
-
-	"cache fonts": {
-		"prefix": "cache fonts",
-		"body": [
-			"// cache fonts say google fonts for 30 days",
-			"workbox.routing.registerRoute(",
-			" 'https://fonts.googleapis.com/css?family=Product%20Sans',",
-			" new workbox.strategies.CacheFirst({",
-			"  cacheName: 'fonts',",
-			"  plugins: [",
-			"   new workbox.expiration.Plugin({",
-			"    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
-			"   }),",
-			"  ],",
-			" })",
-			");"
-		],
-		"description": "cache fonts"
-	},
-
-	"cache requests from external origins": {
-		"prefix": "cache external origins",
-		"body": [
-			"// cache resources from external origins say bootstrap for 30 days",
-			"workbox.routing.registerRoute(",
-			" 'https://fonts.googleapis.com/css?family=Product%20Sans',",
-			" new workbox.strategies.CacheFirst({",
-			"  cacheName: 'external-origins',",
-			"  plugins: [",
-			"   new workbox.cacheableResponse.Plugin({",
-			"    statuses: [0, 200],",
-			"   }),",
-			"   new workbox.expiration.Plugin({",
-			"    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
-			"   }),",
-			"  ],",
-			" })",
-			");"
-		],
-		"description": "cache requests from external origins"
-	},
-
-	"background sync": {
-		"prefix": "background sync",
-		"body": [
-			"$1",
-			"// https://pwafire.org/developer/docs/background-sync/",
-			" (function (window) {",
-			" 'use strict';",
-			" // Add background sync on page l",
-			" document.addEventListener(\"DOMContentLoaded\", () => {",
-			"  window.registerBGSync();",
-			" });",
-			" // exposing `registerSync()` globally for only development purpose",
-			"  window.registerBGSync = () => {",
-			" // if `Service Worker` is registered and read",
-			" navigator.serviceWorker.ready",
-			"   .then((registration) => {",
-			"   // registering `background sync` event",
-			"   return registration.sync.register('posts') ",
-			"    // `posts` is sync tag name ; could be anything 😉",
-			"    .then((rs) => {",
-			"      console.info('[ PWA Fire Bundle ] Background sync registered!');",
-			"    }, () => {",
-			"     console.error('Background sync registered failed.');",
-			"    });",
-			"   });",
-			"  };",
-			" })(window);",
-			"$1"
-		],
-		"description": "add background sync"
-	}
+    ],
+    "description": "Register route to cache"
+  },
+  "workbox-google-analytics": {
+    "prefix": "workbox.analytics",
+    "body": ["googleAnalytics.initialize();"],
+    "description": "Enable workbox google analytics for npm "
+  },
+  "StaleWhileRevalidate": {
+    "prefix": "workbox.StaleWhileRevalidate",
+    "body": ["StaleWhileRevalidate"],
+    "description": "Stale While Revalidate"
+  },
+  "CacheFirst": {
+    "prefix": "workbox.CacheFirst",
+    "body": ["CacheFirst"],
+    "description": "Cache First (Cache Falling Back to Network)"
+  },
+  "NetworkFirst": {
+    "prefix": "workbox.NetworkFirst",
+    "body": ["NetworkFirst"],
+    "description": "Network First (Network Falling Back to Cache)"
+  },
+  "NetworkOnly": {
+    "prefix": "workbox.NetworkOnly",
+    "body": ["NetworkOnly"],
+    "description": "Network Only"
+  },
+  "CacheOnly": {
+    "prefix": "workbox.CacheOnly",
+    "body": ["CacheOnly"],
+    "description": "Cache Only"
+  },
+  "workbox debug": {
+    "prefix": "workbox.debug",
+    "body": ["$1", "workbox.setConfig({", "debug:true", "});", "$1"],
+    "description": "workbox set config for debug or production builds"
+  },
+  "workbox.cacheableResponse": {
+    "prefix": "workbox cacheable response",
+    "body": [
+      "$1",
+      "new workbox.cacheableResponse.Plugin({",
+      " statuses: [0, 200],",
+      " })",
+      "$1"
+    ],
+    "description": "caching based on status codes"
+  },
+  "cache-images": {
+    "prefix": "workbox.assets",
+    "body": [
+      "// Cache CSS, JS, and Web Worker requests...",
+      "registerRoute(",
+      "//  Check to see if the request's destination is style for css, script , or worker...",
+      "({ request }) => request.destination === 'style' ||,",
+      "({ request }) => request.destination === 'style' ||,",
+      "({ request }) => request.destination === 'worker',",
+      "// Use a Stale While Revalidate caching strategy...",
+      " new StaleWhileRevalidate({",
+      "   // Put all cached files in a cache named 'assets'...",
+      "   cacheName: 'assets',",
+      "   plugins: [",
+      "      // Ensure that only requests that result in a 200 status are cached...",
+      "      new CacheableResponsePlugin({",
+      "         statuses: [200]",
+      "      }),",
+      "      new ExpirationPlugin({",
+      "         maxEntries: 20,",
+      "         maxAgeSeconds: 1 * 24 * 60 * 60 // 1 Day",
+      "      }),",
+      "   ],",
+      " })",
+      ");"
+    ],
+    "description": "Cache assets"
+  },
+  "cache-assets": {
+    "prefix": "workbox.images",
+    "body": [
+      "// Cache CSS, JS, and Web Worker requests...",
+      "registerRoute(",
+      "// Check to see if the request's destination is style for an image...",
+      "({ request }) => request.destination === 'image',",
+      "// Use a Cache First caching strategy...",
+      " new CacheFirst({",
+      "   // Put all cached files in a cache named 'images'...",
+      "   cacheName: 'images',",
+      "   plugins: [",
+      "      // Ensure that only requests that result in a 200 status are cached...",
+      "      new CacheableResponsePlugin({",
+      "         statuses: [200]",
+      "      }),",
+      "      new ExpirationPlugin({",
+      "         maxEntries: 20,",
+      "         maxAgeSeconds: 1 * 24 * 60 * 60 // 1 Day",
+      "      }),",
+      "   ],",
+      " })",
+      ");"
+    ],
+    "description": "Cache images"
+  },
+  "cache requests from external origins": {
+    "prefix": "workbox.external",
+    "body": [
+      "// Cache resources from external origins say bootstrap for 30 days",
+      "workbox.routing.registerRoute(",
+      " 'https://fonts.googleapis.com/css?family=Product%20Sans',",
+      " new CacheFirst({",
+      "  cacheName: 'external-origins',",
+      "  plugins: [",
+      "   new CacheableResponsePlugin({",
+      "    statuses: [0, 200],",
+      "   }),",
+      "   new ExpirationPlugin({",
+      "    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days",
+      "   }),",
+      "  ],",
+      " })",
+      ");"
+    ],
+    "description": "Cache requests from external origins"
+  }
 }

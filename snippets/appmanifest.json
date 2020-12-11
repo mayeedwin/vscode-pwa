@@ -1,6 +1,6 @@
 {
 	"manifest": {
-		"prefix": "manifest",
+		"prefix": "web.manifest",
 		"body": [
 			"{",
 			"\"background_color\": \"#fff\",",
@@ -31,7 +31,7 @@
 	},
 	
 	"Native App Install Banner": {
-		"prefix": "native app install",
+		"prefix": "native.install",
 		"body": [
 			"$1",
 			" \"prefer_related_applications\": true,",

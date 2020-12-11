@@ -1,55 +1,55 @@
 {
-	"name": "vscode-pwa",
-	"displayName": " PWA VS Code",
-	"description": "Progressive Web Apps Code Snippets (Including Workbox Support)",
-	"version": "0.4.5",
-	"publisher": "mayeedwin",
-	"engines": {
-		"vscode": "^1.8.0"
-	},
-	"author": {
-		"name": "Maye Edwin"
-	},
-	"keywords": [
-		"pwa",
-		"progressive web apps",
-		"service worker",
-		"manifest",
-		"workbox",
-		"pwafire",
-		"maye edwin"
-	],
-	"icon": ".github/images/icons/vscodepwaicon.png",
-	"galleryBanner": {
-		"color": "#fafafa",
-		"theme": "light"
-	},
-	"categories": [
-		"Snippets"
-	],
-	"contributes": {
-		"snippets": [
-			{
-				"language": "javascript",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/html.json"
-			},
-			{
-				"language": "json",
-				"path": "./snippets/appmanifest.json"
-			}
-		]
-	},
-	"bugs": {
-		"url": "https://github.com/mayeedwin/vscode-pwa/issues/new/choose",
-		"email": "mayedwine1@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mayeedwin/vscode-pwa"
-	},
-	"homepage": "https://github.com/mayeedwin/vscode-pwa/blob/master/README.md"
+  "name": "vscode-pwa",
+  "displayName": " PWA VS Code",
+  "description": "Progressive Web Apps Code Snippets (Including Workbox Support)",
+  "version": "0.5.0-alpha",
+  "publisher": "mayeedwin",
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "author": {
+    "name": "Maye Edwin"
+  },
+  "keywords": [
+    "pwa",
+    "progressive web apps",
+    "service worker",
+    "manifest",
+    "workbox",
+    "pwafire",
+    "maye edwin"
+  ],
+  "icon": ".github/images/icons/vscodepwaicon.png",
+  "galleryBanner": {
+    "color": "#fafafa",
+    "theme": "light"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/appmanifest.json"
+      }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/mayeedwin/vscode-pwa/issues/new/choose",
+    "email": "mayedwine1@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayeedwin/vscode-pwa"
+  },
+  "homepage": "https://github.com/mayeedwin/vscode-pwa/blob/master/README.md"
 }
