@@ -43,7 +43,7 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 ### Commands to type in your editor for Workbox CDN
 
-NOTE : Use and refer to [workbox developer docs](https://developers.google.com/web/tools/workbox/guides/get-started) while using the following commands
+NOTE : Use and refer to [workbox developer docs](https://developers.google.com/web/tools/workbox/guides/get-started) while using the following commands for e.g the most used and critical one, [workbox routing](https://developers.google.com/web/tools/workbox/modules/workbox-routing)
 
 | Command                | Purpose and where to type                            |
 | ---------------------- | ---------------------------------------------------- |
