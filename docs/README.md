@@ -2,15 +2,27 @@
 
 Build Progressive Web Apps in VS Code on the go and like a pro. We have [Workbox Support](https://developers.google.com/web/tools/workbox/) fully stacked too.
 
-### About [pwafire.org](https://pwafire.org)
+### Advanced Progressive Web Apps Features
 
-Our mission is to make your **webdev** environment fully stacked up for best web development practices with Progressive Web Apps.
+**Workbox** is a set of libraries to help you write and manage service workers and caching with the CacheStorage API.
 
-We have an Official Developer Guide [published here](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/) and updated with latest update for this Extension.
+Get started : [how to use Workbox here](https://developers.google.com/web/tools/workbox/guides/get-started)
 
-### Setting up the PWA Development Environment
+### Requirements
 
-We have a **pwadev tips** [repo available here](https://github.com/mayeedwin/pwadev-tips) to help guide you if you're just starting up or want to have your setup checklist done right.
+```bash
+   "vscode": "^1.8.0"
+```
+
+### Installation
+
+[Install vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa). It's available in Visual Studio Marketplace! OR
+
+Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press enter.
+
+```bash
+   ext install mayeedwin.vscode-pwa
+```
 
 ### Setting up the App Manifest and registering the Service Worker
 
@@ -31,15 +43,17 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 ### Commands to type in your editor for Workbox CDN
 
-| Command                 | Purpose and where to type                                                                                                                                                           |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- | --- |
-| `workbox.cdn`           | import workbox in your service worker                                                                                                                                               |                         |
-| `workbox.assets`        | make your JS and CSS ⚡ fast by returning the assets from the cache, while making sure they are updated in the background for the next use in your workbox `service-worker.js` file |
-| `workbox.images`        | serve images quickly from the cache, while making sure you don’t cache them indefinitely, consuming your users' storage in your workbox `service-worker.js` file                    |
-| `workbox.external`      | cache external resources from external orgins for example boostrap css, fonts                                                                                                       |
-| `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it                                                                      |
-| `workbox.debug`         | workbox set config for debug or production builds                                                                                                                                   | `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |     |
-| `workbox.window`        | add workbox window in your landing page for faster new service worker installs and refresh                                                                                          |
+NOTE : Use and refer to [workbox developer docs](https://developers.google.com/web/tools/workbox/guides/get-started) while using the following commands
+
+| Command                | Purpose and where to type                            |
+| ---------------------- | ---------------------------------------------------- |
+| `workbox.cdn` | import workbox cdn version in your service worker |
+| `workbox.registerRoute` | determine whether the request being worked on matches your criteria, in your service worker |
+| `workbox.assets` | cache assets i.e styles, js, workers, in your service worker |
+| `workbox.images` | cache images, in your service worker |
+| `workbox.external` | cache external resources from external orgins e.g fonts, in your service worker |
+| `workbox.debug` | workbox config for debug or production builds, in your service worker |
+| `workbox.window` | add faster new service worker installs and refresh, in your landing page  |
 
 ### Setting up Workbox pre-cache
 
@@ -60,27 +74,6 @@ Read more [here](https://developers.google.com/web/tools/workbox/guides/using-bu
 | `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |
 | `workbox.analytics`     | add offline google analytics in your workbox `service-worker.js` file, at the bottom.                          |
 
-### Advanced Progressive Web Apps Features
-
-**Workbox** is a set of libraries to help you write and manage service workers and caching with the CacheStorage API.
-
-Get started : [how to use Workbox here](https://developers.google.com/web/tools/workbox/guides/get-started)
-
-### Requirements
-
-```bash
-   "vscode": "^1.8.0"
-```
-
-### Installation
-
-[Install vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa). It's available in Visual Studio Marketplace! OR
-
-Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press enter.
-
-```sh
-   ext install mayeedwin.vscode-pwa
-```
 
 ### Demo with PWA VS Code in play (With the old version)
 
