@@ -2,15 +2,27 @@
 
 Build Progressive Web Apps in VS Code on the go and like a pro. We have [Workbox Support](https://developers.google.com/web/tools/workbox/) fully stacked too.
 
-### About [pwafire.org](https://pwafire.org)
+### Advanced Progressive Web Apps Features
 
-Our mission is to make your **webdev** environment fully stacked up for best web development practices with Progressive Web Apps.
+**Workbox** is a set of libraries to help you write and manage service workers and caching with the CacheStorage API.
 
-We have an Official Developer Guide [published here](https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/) and updated with latest update for this Extension.
+Get started : [how to use Workbox here](https://developers.google.com/web/tools/workbox/guides/get-started)
 
-### Setting up the PWA Development Environment
+### Requirements
 
-We have a **pwadev tips** [repo available here](https://github.com/mayeedwin/pwadev-tips) to help guide you if you're just starting up or want to have your setup checklist done right.
+```bash
+   "vscode": "^1.8.0"
+```
+
+### Installation
+
+[Install vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa). It's available in Visual Studio Marketplace! OR
+
+Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press enter.
+
+```bash
+   ext install mayeedwin.vscode-pwa
+```
 
 ### Setting up the App Manifest and registering the Service Worker
 
@@ -31,29 +43,37 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 ### Commands to type in your editor for Workbox CDN
 
-More commands on this extension's [repo docs here](https://github.com/mayeedwin/vscode-pwa/tree/master/docs)
+NOTE : Use and refer to [workbox developer docs](https://developers.google.com/web/tools/workbox/guides/get-started) while using the following commands
 
-### Advanced Progressive Web Apps Features
+| Command                | Purpose and where to type                            |
+| ---------------------- | ---------------------------------------------------- |
+| `workbox.cdn` | import workbox cdn version in your service worker |
+| `workbox.registerRoute` | determine whether the request being worked on matches your criteria, in your service worker |
+| `workbox.assets` | cache assets i.e styles, js, workers, in your service worker |
+| `workbox.images` | cache images, in your service worker |
+| `workbox.external` | cache external resources from external orgins e.g fonts, in your service worker |
+| `workbox.debug` | workbox config for debug or production builds, in your service worker |
+| `workbox.window` | add faster new service worker installs and refresh, in your landing page  |
 
-**Workbox** is a set of libraries to help you write and manage service workers and caching with the CacheStorage API.
+### Setting up Workbox pre-cache
 
-Get started : [how to use Workbox here](https://developers.google.com/web/tools/workbox/guides/get-started)
+| Command            | Purpose and where to type                                            |
+| ------------------ | -------------------------------------------------------------------- |
+| `workbox.precache` | workbox precache config code snippet in your say `sw-config.js` file |
 
-### Requirements
+### Commands to type in your editor for Workbox packages, using a bundler
 
-```bash
-   "vscode": "^1.8.0"
-```
+**Excerpt :** When using a bundler to create your service worker, you install the Workbox packages you want to use from **npm**, and
+then you use import statements to directly reference the Workbox modules you want to use.
 
-### Installation
+Read more [here](https://developers.google.com/web/tools/workbox/guides/using-bundlers)
 
-[Install vscode-pwa](https://marketplace.visualstudio.com/items?itemName=mayeedwin.vscode-pwa). It's available in Visual Studio Marketplace! OR
+| Command                 | Purpose and where to type                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `workbox.packages`      | import all workbox npm modules in your custom workbox service worker config` file                              |
+| `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |
+| `workbox.analytics`     | add offline google analytics in your workbox `service-worker.js` file, at the bottom.                          |
 
-Launch VS Code Quick Open ( Ctrl + P ), paste the following command and press enter.
-
-```sh
-   ext install mayeedwin.vscode-pwa
-```
 
 ### Demo with PWA VS Code in play (With the old version)
 
