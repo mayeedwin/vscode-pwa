@@ -87,6 +87,7 @@
       "  ...workbox.precaching,",
       "  ...workbox.strategies,",
       "  ...workbox.cacheableResponse,",
+      "  ...workbox.expiration",
       "}",
       "const {",
       "  clientsClaim,",
