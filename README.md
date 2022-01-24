@@ -45,15 +45,15 @@ Write the **Service Worker** and **App Manifest** really quick and like a pro!
 
 NOTE : Use and refer to [workbox developer docs](https://developers.google.com/web/tools/workbox/guides/get-started) while using the following commands for e.g the most used and critical one, [workbox routing](https://developers.google.com/web/tools/workbox/modules/workbox-routing)
 
-| Command                | Purpose and where to type                            |
-| ---------------------- | ---------------------------------------------------- |
-| `workbox.cdn` | import workbox cdn version in your service worker |
+| Command                 | Purpose and where to type                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------- |
+| `workbox.cdn`           | import workbox cdn version in your service worker                                           |
 | `workbox.registerRoute` | determine whether the request being worked on matches your criteria, in your service worker |
-| `workbox.assets` | cache assets i.e styles, js, workers, in your service worker |
-| `workbox.images` | cache images, in your service worker |
-| `workbox.external` | cache external resources from external orgins e.g fonts, in your service worker |
-| `workbox.debug` | workbox config for debug or production builds, in your service worker |
-| `workbox.window` | add faster new service worker installs and refresh, in your landing page  |
+| `workbox.assets`        | cache assets i.e styles, js, workers, in your service worker                                |
+| `workbox.images`        | cache images, in your service worker                                                        |
+| `workbox.external`      | cache external resources from external orgins e.g fonts, in your service worker             |
+| `workbox.debug`         | workbox config for debug or production builds, in your service worker                       |
+| `workbox.window`        | add faster new service worker installs and refresh, in your landing page                    |
 
 ### Setting up Workbox pre-cache
 
@@ -68,12 +68,11 @@ then you use import statements to directly reference the Workbox modules you wan
 
 Read more [here](https://developers.google.com/web/tools/workbox/guides/using-bundlers)
 
-| Command                 | Purpose and where to type                                                                                      |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `workbox.packages`      | import all workbox npm modules in your custom workbox service worker config` file                              |
-| `workbox.registerRoute` | determine whether the request being worked on matches your criteria, and if so, apply a caching strategy to it |
-| `workbox.analytics`     | add offline google analytics in your workbox `service-worker.js` file, at the bottom.                          |
-
+| Command                 | Purpose and where to type      |
+| ----------------------- | ------------------------------ |
+| `workbox.packages`      | import all workbox npm modules |
+| `workbox.registerRoute` | set caching routes             |
+| `workbox.analytics`     | add offline google analytics   |
 
 ### Demo with PWA VS Code in play (With the old version)
 
