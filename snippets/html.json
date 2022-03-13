@@ -1,0 +1,52 @@
+{
+  "register service worker": {
+    "prefix": "register.service.worker",
+    "body": [
+      "$1",
+      "<script>",
+      "  if ('serviceWorker' in navigator){",
+      "    window.addEventListener('load', () => {",
+      "       navigator.serviceWorker.register('./service-worker.js')",
+      "    .then(() => { console.log('[ Hey there! ] Service Worker Registered'); });",
+      "   });",
+      " }",
+      "</script>",
+      "$1"
+    ],
+    "description": "Register service worker"
+  },
+
+  "add web manifest": {
+    "prefix": "add.web.manifest",
+    "body": [
+      "$1",
+      "   <link rel=\"manifest\" href=\"./app.webmanifest\">",
+      "$1"
+    ],
+    "description": "add web manifest to pages"
+  },
+
+  "add theme color": {
+    "prefix": "theme.color",
+    "body": ["$1", "  <meta name=\"theme-color\" content=\"#fff\" />", "$1"],
+    "description": "Add theme color to pages"
+  },
+
+  "workbox window": {
+    "prefix": "workbox.window",
+    "body": [
+      "$1",
+      "<script type=\"module\">",
+      "  import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-window.prod.mjs';",
+      "$1",
+      "   if ('serviceWorker' in navigator) {",
+      "     const wb = new Workbox('./service-worker.js');",
+      "     /* add 'workbox page reload' for users here (optional) */",
+      "     wb.register();",
+      "     }",
+      "</script>",
+      "$1"
+    ],
+    "description": "Add workbox window"
+  }
+}
