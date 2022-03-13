@@ -78,7 +78,7 @@ Read more [here](https://developers.google.com/web/tools/workbox/guides/using-bu
 | API / Feature                                        | Command           | Where to type        |
 | ---------------------------------------------------- | ----------------- | -------------------- |
 | Web Share Target API                                 | `web.share.basic` | in your app manifest |
-| Web Share Target API - Accepting application changes | `web.share.app    | in your app manifest |
+| Web Share Target API - Accepting application changes | `web.share.app`   | in your app manifest |
 | Web Share Target API - Accepting files               | `web.share.files` | in your app manifest |
 | Web Share Target API - Accepting text                | `web.share.text`  | in your app manifest |
 | App Screeshots Preview before PWA Installation       | `pwa.screenshots` | in your app manifest |
