@@ -73,6 +73,16 @@ Read more [here](https://developers.google.com/web/tools/workbox/guides/using-bu
 | `workbox.packages`  | import all workbox npm modules |
 | `workbox.analytics` | add offline google analytics   |
 
+### Adding Project Fugu APIs
+
+| API / Feature                                        | Command           | Where to type        |
+| ---------------------------------------------------- | ----------------- | -------------------- |
+| Web Share Target API                                 | `web.share.basic` | in your app manifest |
+| Web Share Target API - Accepting application changes | `web.share.app    | in your app manifest |
+| Web Share Target API - Accepting files               | `web.share.files` | in your app manifest |
+| Web Share Target API - Accepting text                | `web.share.text`  | in your app manifest |
+| App Screeshots Preview before PWA Installation       | `pwa.screenshots` | in your app manifest |
+
 ### Demo with PWA VS Code in play (With the old version)
 
 Load [preview in your browser here](.github/images/vscode-pwa-vid.gif)
