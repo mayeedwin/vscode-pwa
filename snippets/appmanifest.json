@@ -109,5 +109,30 @@
       "$1"
     ],
     "description": "Web Share Target API"
+  },
+
+  "Add PWA Screenshots": {
+    "prefix": "pwa.screenshots",
+    "body": [
+      "$1",
+      "\"screenshots\": [",
+      "  {",
+      "    \"src\": \"images/screenshots/screenshot-1.png\",",
+      "    \"sizes\": \"320x640\",",
+      "    \"type\": \"image/png\"",
+      "  },",
+      "  {",
+      "    \"src\": \"images/screenshots/screenshot-2.png\",",
+      "    \"sizes\": \"320x640\"",
+      "    \"type\": \"image/png\"",
+      "  },",
+      "  {",
+      "    \"src\": \"images/screenshots/screenshot-3.png\",",
+      "    \"sizes\": \"320x640\",",
+      "    \"type\": \"image/png\"",
+      "  }",
+      "]"
+    ],
+    "description": "Add PWA Screenshots"
   }
 }
