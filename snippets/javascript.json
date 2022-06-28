@@ -1,7 +1,7 @@
 {
   "print to console": {
     "prefix": "extension.author",
-    "body": ["$1", "console.log('Authored by Maye Edwin');", "$1"],
+    "body": ["$1", "console.log('Authored by Maye Edwin.');", "$1"],
     "description": "Hello from Maye!"
   },
   "service worker": {
@@ -80,7 +80,7 @@
     "body": [
       " importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js');",
       " if (workbox) {",
-      "   console.log('[ Hello ] from Maye');",
+      "   console.log('[ Hello ] from Maye of pwafire.org');",
       "const wkb = {",
       "  ...workbox.core,",
       "  ...workbox.routing,",
@@ -91,6 +91,7 @@
       "}",
       "const {",
       "  clientsClaim,",
+      "  skipWaiting,",
       "  cacheNames,",
       "  setCacheNameDetails,",
       "  setCatchHandler,",
@@ -110,11 +111,11 @@
       "  } = wkb;",
       "$2",
       "$2",
-      "     /* here is your workbox",
-      "          workspace */",
+      "     /* Here is your workbox workspace.",
+      "          Remember to emove all unused modules. */",
       "$2",
       "$2",
-      "   self.skipWaiting();",
+      "   skipWaiting();",
       "   clientsClaim();",
       " } else {",
       "   console.log('Boo! Workbox failed to load 😬');",
