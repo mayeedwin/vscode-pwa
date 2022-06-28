@@ -1,16 +1,19 @@
 importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js"
+  "https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js"
 );
 if (workbox) {
+  console.log("[ Hello ] from Maye of pwafire.org");
   const wkb = {
     ...workbox.core,
     ...workbox.routing,
     ...workbox.precaching,
     ...workbox.strategies,
     ...workbox.cacheableResponse,
+    ...workbox.expiration,
   };
   const {
     clientsClaim,
+    skipWaiting,
     cacheNames,
     setCacheNameDetails,
     setCatchHandler,
@@ -29,10 +32,10 @@ if (workbox) {
     CacheableResponsePlugin,
   } = wkb;
 
-  /* here is your workbox
-		  workspace */
+  /* Here is your workbox workspace.
+          Remember to remove all unused modules. */
 
-  self.skipWaiting();
+  skipWaiting();
   clientsClaim();
 } else {
   console.log("Boo! Workbox failed to load 😬");
